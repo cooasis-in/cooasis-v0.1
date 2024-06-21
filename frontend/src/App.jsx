@@ -1,10 +1,11 @@
 import "./App.css";
+import StarturJourney from "./components/StarturJourney";
 
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+
     </>
   );
 }
