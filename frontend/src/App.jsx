@@ -1,11 +1,12 @@
 import "./App.css";
-import StarturJourney from "./components/StarturJourney";
-
+import EcosystemSignup from "./components/EcosystemSignup/EcosystemSignup";
+import EmailVerify from "./components/emailVerify/EmailVerify";
 
 function App() {
   return (
     <>
-
+      <EcosystemSignup />
+      <EmailVerify/>
     </>
   );
 }
