@@ -4,7 +4,7 @@ import './EcosystemSignup.css';
 const EcosystemSignup = () => {
   return (
     <section className="signup-page">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-10">
         <div className="grid grid-cols-12">
           <div className="col-span-7">
             <div className="flex py-8">
