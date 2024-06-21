@@ -1,10 +1,9 @@
-import "./App.css";
-
+import EcosystemSignup from './components/EcosystemSignup/EcosystemSignup'
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <EcosystemSignup />
     </>
   );
 }
