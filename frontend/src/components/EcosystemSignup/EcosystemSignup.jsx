@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import './EcosystemSignup.css';
+import Button from '../Buttons/Buttons';
 
 const EcosystemSignup = () => {
   return (
@@ -11,12 +12,18 @@ const EcosystemSignup = () => {
               <img src="src/assets/cooasis.svg" alt="" />
               <img src="src/assets/beta.svg" alt="" className="mb-[-16px] ml-2" />
             </div>
-            <div>
+            <div className="!relative mt-4">
               <h1 className="text-[60px] text-[#014F59] leading-[50px] font-normal max-w-[686px]">Nex-gen design
                 ecosystem</h1>
+              <Button size="w-[108.85px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute top-[-28px] left-[24px]">Projects</Button>
+              <Button size="w-[120px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute top-[-19px] right-[214px]">Showcase</Button>
+              <Button size="w-[102px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute !bottom-[-3px] left-[266px]">Unskill</Button>
+              <Button size="w-[135px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute bottom-[-80px] left-[100px]">Collaborate</Button>
             </div>
-            <div className="mt-4">
-              <img src="src/assets/login-center.png" alt="" className="max-w-[430px]" />
+            <div>
+              <img src="src/assets/login-center.png" alt="" className="max-w-[430px] max-h-[385px]" />
+            </div>
+            <div>
             </div>
           </div>
           <div className="col-span-5">
@@ -31,7 +38,7 @@ const EcosystemSignup = () => {
                       placeholder="Eg. Jeff@accces.in"
                       className="text-[17px] text-[#014F5980] leading-[14.13px] font-extralight w-full px-8 py-6 border-[1px] border-[solid] border-[#014F5917] rounded-full focus:outline-none focus:ring-2"
                     />
-                     <img src="src/assets/email-2.svg" alt="" className="absolute right-[35px]" />
+                    <img src="src/assets/email-2.svg" alt="" className="absolute right-[35px]" />
                   </div>
                   <div className="mb-6 flex items-center relative">
                     <input
@@ -51,11 +58,11 @@ const EcosystemSignup = () => {
                   Signup using Google
                 </button>
                 <p className="mt-6 text-[14px] text-[#014F59] leading-[20.52px] fomt-normal text-center">
-                By creating an account you agree with our <span><u>Terms of Service, Privacy Policy,</u> </span>
-                and our default <span><u>Notification Settings</u>.</span>
+                  By creating an account you agree with our <span><u>Terms of Service, Privacy Policy,</u> </span>
+                  and our default <span><u>Notification Settings</u>.</span>
                 </p>
                 <p className="mt-6 text-[14px] text-[#014F59] leading-[20.52px] fomt-normal text-center">
-                Already have an account? <span className="text-[#7D22FF]"><u>Sign In</u></span>
+                  Already have an account? <span className="text-[#7D22FF]"><u>Sign In</u></span>
                 </p>
               </div>
             </div>
