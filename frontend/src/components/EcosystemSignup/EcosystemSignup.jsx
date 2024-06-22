@@ -5,19 +5,11 @@ import Button from "../Buttons/Buttons";
 const EcosystemSignup = () => {
   return (
     <section className="signup-page">
-      <div className="container mx-auto px-10">
-        <div className="grid grid-cols-12">
-          <div className="col-span-7">
-            <div className="flex py-8">
-              <img src="src/assets/cooasis.svg" alt="" />
-              <img
-                src="src/assets/beta.svg"
-                alt=""
-                className="mb-[-16px] ml-2"
-              />
-            </div>
-            <div className="!relative mt-4">
-              <h1 className="text-[60px] text-[#014F59] leading-[50px] font-normal max-w-[686px]">
+      <div className="container mx-auto px-4 bg-blak">
+        <div className="grid grid-cols-1 lg:grid-cols-12">
+          <div className="col-span-7 bg-whi">
+            <div className="!relative mt-16">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] text-[#014F59] leading-[50px] font-normal max-w-[686px]">
                 Nex-gen design ecosystem
               </h1>
               <Button size="w-[108.85px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute top-[-28px] left-[24px]">
@@ -37,19 +29,19 @@ const EcosystemSignup = () => {
               <img
                 src="src/assets/login-center.png"
                 alt=""
-                className="max-w-[430px] max-h-[385px]"
+                className="max-w-[430px] ml-10 max-h-[385px]"
               />
             </div>
-            <div></div>
           </div>
-          <div className="col-span-5">
+          {/* Form */}
+          <div className="col-span-5 bg-black">
             <div className="flex items-center justify-center min-h-screen">
-              <div className="bg-white rounded-[25px] border-[1px]  border-[#014F5921] p-8">
-                <h2 className="text-[50px] font-normal leading-[41.55px] text-[#014F59] mb-8 text-center mt-6">
+              <div className="bg-white rounded-[25px] border-[1px]  border-[#014F5921] p-12">
+                <h2 className="text-[30px] font-normal leading-[41.55px] text-[#014F59] mb-8 text-center mt-6">
                   Sign up
                 </h2>
                 <form>
-                  <div className="mb-4 mt-12 flex items-center relative">
+                  <div className="mb-4 mt-1 flex items-center relative">
                     <input
                       type="email"
                       id="email"
@@ -77,7 +69,7 @@ const EcosystemSignup = () => {
                   </div>
                 </form>
                 <div className="my-4 text-center text-gray-500">OR</div>
-                <button className="text-[24px] text-[#E1FF26] leading-[19.94px] font-normal bg-[#014F59] px-8 py-6 w-full rounded-full flex items-center justify-center">
+                <button className="text-[20px] text-[#E1FF26] leading-[19.94px] font-normal bg-[#014F59] px-8 py-6 w-full rounded-full flex items-center justify-center">
                   <span className="mr-2">
                     <img
                       src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"

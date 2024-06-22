@@ -1,7 +1,7 @@
 import React from "react";
 
 const Button = ({ children, onClick, size, color, text, border, hover, borcolor, font }) => {
-  const buttonSize = size || "w-[135px] h-[41px]";
+  const buttonSize = size || "w-[120px] h-[41px]";
   const buttonColor = color || "bg-[#E1FF2682]";
   const textColor = text || "text-[#014F59]";
   const textborder = border || "none";

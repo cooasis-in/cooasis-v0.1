@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <EcosystemSignup />
-      <EmailVerify/>
+      {/* <EmailVerify/> */}
     </>
   );
 }
