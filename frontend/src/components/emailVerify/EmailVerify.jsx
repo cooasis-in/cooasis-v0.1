@@ -1,35 +1,31 @@
 import React from "react";
-// import "./EcosystemSignup.css";
+
 import Button from "../Buttons/Buttons";
 
 const EmailVerify = () => {
   return (
-    <section className="signup-page">
-      <div className="container mx-auto px-10">
-        <div className="grid grid-cols-12">
-          <div className="col-span-7">
-            <div className="flex py-8">
-              <img src="src/assets/cooasis.svg" alt="" />
-              <img
-                src="src/assets/beta.svg"
-                alt=""
-                className="mb-[-16px] ml-2"
-              />
-            </div>
-            <div className="!relative mt-4">
+    <section className="signup-page px-6 xl:px-[36px] pt-7">
+      <div className="mx-auto px-10 max-w-[1700px]">
+        <div className="flex">
+          <img src="src/assets/cooasis.svg" alt="" />
+          <img src="src/assets/beta.svg" alt="" className="mb-[-16px] ml-2" />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[calc(100vh-100px)] items-center">
+          <div className="col-span-6">
+            <div className="!relative mt-16 md:mt-[10%]">
               <h1 className="text-[60px] text-[#014F59] leading-[50px] font-normal max-w-[686px]">
                 Nex-gen design ecosystem
               </h1>
               <Button size="w-[108.85px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute top-[-28px] left-[24px]">
                 Projects
               </Button>
-              <Button size="w-[120px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute top-[-19px] right-[214px]">
+              <Button size="w-[120px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute top-[-19px] right-[115px]">
                 Showcase
               </Button>
               <Button size="w-[102px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute !bottom-[-3px] left-[266px]">
                 Unskill
               </Button>
-              <Button size="w-[135px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute bottom-[-80px] left-[100px]">
+              <Button size="w-[135px] h-[41px] text-[15px] leading-[18px] font-normal rounded-full !absolute bottom-[-80px] left-[140px]">
                 Collaborate
               </Button>
             </div>
@@ -37,15 +33,15 @@ const EmailVerify = () => {
               <img
                 src="src/assets/login-center.png"
                 alt=""
-                className="max-w-[430px] max-h-[385px]"
+                className="sing-up-img"
               />
             </div>
+            <div></div>
           </div>
           {/* Verify Email */}
-          <div className="col-span-5">
-            <div className="flex items-center justify-center min-h-screen ">
-              <div className="bg-white rounded-[25px] border-[1px] border-[#014F5921] p-8">
-              <div className="flex justify-center mb-">
+          <div className="col-span-6 lg:pl-14">
+            <div className="bg-white rounded-[25px] border-[1px] border-[#014F5921] py-6 px-8 xl:px-[10%]">
+            <div className="flex justify-center mb-">
                   <img
                     src="src/assets/email.png"
                     alt="Email Icon"
@@ -103,7 +99,6 @@ const EmailVerify = () => {
                     Cancel
                   </button>
                 </div>
-              </div>
             </div>
           </div>
         </div>
