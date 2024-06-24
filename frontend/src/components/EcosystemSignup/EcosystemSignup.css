@@ -11,3 +11,21 @@
   max-width: 90%;
   width: 100%;
 }
+
+@media (max-width: 469px) {
+
+  .media {
+    font-size: 45px !important;
+    line-height: 50px !important;
+  }
+
+}
+
+@media (max-width: 364px) {
+
+  .media {
+    font-size: 38px !important;
+    line-height: 45px !important;
+  }
+
+}
