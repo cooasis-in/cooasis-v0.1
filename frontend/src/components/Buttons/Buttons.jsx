@@ -18,7 +18,7 @@ const Button = ({ children, onClick, size, color, text, border, hover, borcolor,
       <div className="flex items-center text-center">
       <div className="mr-2">
           {/* SVG Icon */}
-         <img src="src/assets/right.svg" alt="" className="bg-[#014F59] w-[22px] h-[22px] rounded-full p-[4px]" />
+         <img src="images/right.svg" alt="" className="bg-[#014F59] w-[18px] h-[15px] rounded-full p-[4px]" />
         </div>
         <div>{children}</div>
       </div>
