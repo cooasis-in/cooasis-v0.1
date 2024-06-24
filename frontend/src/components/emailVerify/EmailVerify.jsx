@@ -39,8 +39,7 @@ const EmailVerify = () => {
             <div></div>
           </div>
           {/* Verify Email */}
-          {/* hidden hatana hai */}
-          <div className="col-span-6 lg:pl-14 hidden lg:block">
+          <div className="col-span-6 lg:pl-14">
             <div className="res-adjust bg-white rounded-[40px] lg:rounded-[25px] mt-10 lg:mt-0 border-[1px] border-[#014F5921] p-4 sm:p-8 xl:px-[10%] max-w-[355px] sm:max-w-[455px] md:max-w-[555px] lg:max-w-auto mx-auto">
               <div className="flex justify-center hidden lg:block">
                 <img
@@ -111,18 +110,23 @@ const EmailVerify = () => {
               <img src="src/assets/signup-image.png" alt="" />
             </div>
           </div>
-          {/* verify page */}
-          <div className="text-center block lg:hidden">
+
+          {/* Verify Page Start */}
+
+          <div className="text-center hidden">
             <div className="mt-[-4rem]">
               <img src="src\assets\verify.svg" alt="" className="mx-auto" />
               <h3 className="text-[25px] text-[#014F59] leading-[22.77px] font-normal mt-4">email verified</h3>
             </div>
             <div className="flex justify-center">
               <div className="absolute bottom-0">
-              <img src="src/assets/signup-image.png" alt="" />
+                <img src="src/assets/signup-image.png" alt="" />
               </div>
             </div>
           </div>
+
+          {/* Verify Page End */}
+
         </div>
       </div>
     </section>
