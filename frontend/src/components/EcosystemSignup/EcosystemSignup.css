@@ -12,6 +12,26 @@
   width: 100%;
 }
 
+@media (max-width: 1024) {
+
+  .signup-page {
+    background-image: url(../../assets/responsive-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .res-adjust {
+    margin-top: 20px !important;
+  }
+
+}
+
 @media (max-width: 469px) {
 
   .media {
