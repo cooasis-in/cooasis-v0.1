@@ -1,22 +1,21 @@
-import React from 'react'
+import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
-      <>
-      <div className=' bg-[#FFFCF4] h-20'>
-      <div className="flex p-8 ml-4">
-              <img src="src/assets/cooasis.svg" alt="" />
-              <img
-                src="src/assets/beta.svg"
-                alt=""
-                className="mb-[-16px] ml-2"
-              />
-            </div>
+    <>
+      <div className=" h-20 flex justify-between lg:bg-[#FFFCF4] items-center px-4 lg:px-10 ">
+        <div className="flex ml-2">
+          <img src="images/cooasis.svg" alt="" className="h-10 w-20" />
+          <img src="images/beta.svg" alt="" className=" ml-2 mt-5 h-4" />
+        </div>
+        <div>
+          <button>
+            <img src="images/darkMode.png" alt="" />
+          </button>
+        </div>
       </div>
-      </>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Navbar
+export default Navbar;
