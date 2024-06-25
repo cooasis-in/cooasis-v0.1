@@ -11,3 +11,53 @@
   max-width: 90%;
   width: 100%;
 }
+
+@media (max-width: 1024) {
+
+  .signup-page {
+    background-image: url(../../assets/responsive-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .res-adjust {
+    margin-top: 20px !important;
+  }
+
+}
+
+@media (max-width: 469px) {
+
+  .media {
+    font-size: 45px !important;
+    line-height: 50px !important;
+  }
+
+}
+
+@media (max-width: 364px) {
+
+  .media {
+    font-size: 38px !important;
+    line-height: 45px !important;
+  }
+
+}
+
+.sing-up-title {
+  font-family: PowerGrotesk;
+}
+
+.f-HelveticaNeueUltraLight {
+  font-family: HelveticaNeueUltraLight;
+}
+
+.f-HelveticaNeueRoman {
+  font-family: HelveticaNeueRoman;
+}

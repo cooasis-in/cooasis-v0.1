@@ -1,0 +1,14 @@
+@media (max-width: 645px) {
+  .readjustment {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
+
+
+@media (max-width: 366px) {
+  .readjustment {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
