@@ -1,6 +1,7 @@
 import React from "react";
 import "./stYurJourney.css";
 import Button from "../../components/Buttons/Buttons";
+import { Link } from "react-router-dom";
 
 const StYourJourney = () => {
   return (
@@ -53,9 +54,11 @@ const StYourJourney = () => {
                 </li>
               </ul>
             </div>
-            <button className="mt-[120px] mb-6 lg:mt-8 bg-[#014F59] text-[#E1FF26] py-4 px-8 rounded-full text-base font-normal w-full lg:w-[160px]">
-              Continue
-            </button>
+            <Link to="/refer">
+              <button className="mt-[120px] mb-6 lg:mt-8 bg-[#014F59] text-[#E1FF26] py-4 px-8 rounded-full text-base font-normal w-full lg:w-[160px]">
+                Continue
+              </button>
+            </Link>
           </div>
           <div className="hidden relative lg:flex col-span-6 justify-center lg:justify-end mt-10 lg:mt-0">
             <img
