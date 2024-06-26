@@ -3,7 +3,7 @@ import './FillInYourDetails.css';
 
 const FillInYourDetails = () => {
   return (
-    <section className="fillinyourdetails">
+    <section className="bg-color fillinyourdetails">
       <div className="container mx-auto relative">
         <div className="flex py-6">
           <img src="src/assets/cooasis.svg" alt="" />

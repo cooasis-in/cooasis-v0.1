@@ -12,17 +12,6 @@
   width: 100%;
 }
 
-@media (max-width: 1024) {
-
-  .signup-page {
-    background-image: url(images/responsive-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  }
-
-}
 
 @media (max-width: 400px) {
 
@@ -48,16 +37,4 @@
     line-height: 45px !important;
   }
 
-}
-
-.sing-up-title {
-  font-family: PowerGrotesk;
-}
-
-.f-HelveticaNeueUltraLight {
-  font-family: HelveticaNeueUltraLight;
-}
-
-.f-HelveticaNeueRoman {
-  font-family: HelveticaNeueRoman;
 }
