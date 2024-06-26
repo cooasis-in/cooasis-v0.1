@@ -1,0 +1,78 @@
+.pen-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pen-tool-canvas-container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background-color: #FAF7EC;
+  overflow: hidden;
+}
+
+.pen-tool-toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.pen-tool-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pen-tool img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.pen-tool-undo-controls {
+  
+  top:320px;
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pen-tool-bottom-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pen-tool-bottom-controls img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.pen-tool-zoom-controls{
+  top:10px;
+  left: 680px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pen-tool-canvas.cursor-move {
+  cursor: grab;
+}
+
+.pen-tool-canvas.cursor-move:active {
+  cursor: grabbing;
+}
+
+.pen-tool-canvas.cursor-pen {
+  cursor: url('images/Vector 33.png'), auto;
+}
+
+.pen-tool-canvas.cursor-default {
+  cursor: default;
+}

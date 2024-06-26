@@ -39,6 +39,13 @@ const EcosystemSignup = () => {
               >
                 Next
               </button>
+              {/* <Link to='/slider'>
+              <button
+                className="text-[24px] md:text-[33px] text-[#E1FF26] leading-[14.13px] font-normal w-full"
+              >
+                Next
+              </button>
+              </Link> */}
             </div>
             {/* Only For Mobiles Screen Content End */}
           </div>
@@ -196,10 +203,11 @@ const EcosystemSignup = () => {
                 </>
               )}
             </div>
-          </div>
-          <div className="mt-7 flex justify-center block lg:hidden">
+            <div className="mt-7 flex justify-center block lg:hidden">
             <img src="images/signup-image.png" alt="" />
           </div>
+          </div>
+         
         </div>
       </div>
     </section>

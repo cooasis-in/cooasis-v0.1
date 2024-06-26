@@ -15,7 +15,7 @@
 @media (max-width: 1024) {
 
   .signup-page {
-    background-image: url(../../assets/responsive-bg.png);
+    background-image: url(images/responsive-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
