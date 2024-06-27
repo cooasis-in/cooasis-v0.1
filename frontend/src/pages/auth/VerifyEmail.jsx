@@ -20,30 +20,30 @@ const VerifyEmail = () => {
           </p>
           <p className="f-HelveticaNeueRoman text-[#C8C8C8]">Change email</p>
         </div>
-        <div className="mt-6 lg:mt-0 mb-6 flex items-center justify-center relative flex-wrap">
+        <div className="mt-6 lg:mt-0 mb-6 flex items-center justify-center relative">
           <input
             type="text"
             id="verification-code-1"
             placeholder=""
-            className="readjustment text-[16px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-1"
+            className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
           />
           <input
             type="text"
             id="verification-code-2"
             placeholder=""
-            className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-1"
+            className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
           />
           <input
             type="text"
             id="verification-code-3"
             placeholder=""
-            className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-1"
+            className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
           />
           <input
             type="text"
             id="verification-code-4"
             placeholder=""
-            className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-1"
+            className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
           />
         </div>
       </form>

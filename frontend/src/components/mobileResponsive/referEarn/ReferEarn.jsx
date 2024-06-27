@@ -22,7 +22,7 @@ const ReferEarn = () => {
     <section className="bg-color !h-full">
       <div className="container mx-auto p-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div className="heading text-center mt-20 mb-4 col-span-full">
+          <div className="heading text-center mb-4 col-span-full">
             <h1 className="f-PowerGrotesk text-4xl md:col-span-3 text-[#014F59]">
               Refer & Earn
             </h1>
