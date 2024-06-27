@@ -1,5 +1,12 @@
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "./App.css";
+
+import FillInYourDetails from "./components/FillInYourDetails/FillInYourDetails";
+// import EcosystemSignup from "./pages/EcosystemSignup/EcosystemSignup";
+// import { Routes, Route } from "react-router-dom";
+// import ReferEarn from "./components/mobileResponsive/referEarn/ReferEarn";
+// import VerifiedResp from "./components/mobileResponsive/verified/VerifiedResp";
+// import SliderMob from "./components/mobileResponsive/sliderResp/SliderMob";
 import EcosystemSignup from "./pages/EcosystemSignup/EcosystemSignup";
 import { Routes, Route } from "react-router-dom";
 import ReferEarn from "./components/mobileResponsive/referEarn/ReferEarn";
@@ -18,6 +25,7 @@ function App() {
         <Route path="/refer" element={<ReferEarn />} />
         <Route path="/slider" element={<SliderMob />} />
       </Routes> */}
+      <FillInYourDetails/>
       {/* <PenTool/> */}
       <PenToolUi/>
     </div>

@@ -8,6 +8,42 @@
   margin-right: auto;
 }
 
+.f-PowerGrotesk {
+  font-family: PowerGrotesk;
+}
+
+.f-HelveticaNeueUltraLight {
+  font-family: HelveticaNeueUltraLight;
+}
+
+.f-HelveticaNeueRoman {
+  font-family: HelveticaNeueRoman;
+}
+
+.f-HelveticaNeueLight {
+  font-family: HelveticaNeueLight;
+}
+
+.f-HelveticaNeueMedium {
+  font-family: HelveticaNeueMedium;
+}
+
+.lg-bg-color {
+  background-color: #fefdee;
+  background-image: linear-gradient(160deg, #fefdee 60%, #f5fdaa, #fefdee);
+  min-height: 100vh;
+}
+
+@media (max-width: 1024px) {
+
+  .bg-color {
+    background-color: #fefdee;
+    background-image: linear-gradient(160deg, #fefdee 60%, #f5fdaa, #fefdee);
+    min-height: 100vh;
+  }
+
+}
+
 
 @font-face {
   font-family: 'HelveticaNeueBold';
