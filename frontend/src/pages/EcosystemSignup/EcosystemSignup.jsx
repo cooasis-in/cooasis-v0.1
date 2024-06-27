@@ -15,12 +15,12 @@ const EcosystemSignup = () => {
   };
 
   return (
-    <section className="bg-color signup-page px-6 xl:px-[36px] pt-7">
+    <section className="bg-color signup-page px-6 xl:px-[36px]">
       <div className="mx-auto md:px-10 max-w-[1700px]">
         <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[calc(100vh-100px)] items-center">
           <div className={`col-span-6 lg:block ${showOnClic ? "hidden" : ""}`}>
-            <div className="!relative md:mt-[5%] lg:mt-[10%]">
-              <h1 className="media text-[60px] sm:text-[80px] lg:text-[60px] text-[#014F59] leading-[60px] sm:leading-[70px] lg:leading-[50px] f-PowerGrotesk  xl:max-w-[686px] text-center lg:text-left mt-24 ">
+            <div className="!relative">
+              <h1 className="media text-[60px] sm:text-[80px] lg:text-[60px] text-[#014F59] leading-[60px] sm:leading-[70px] lg:leading-[50px] f-PowerGrotesk  xl:max-w-[686px] text-center lg:text-left">
                 Nex-gen design ecosystem
               </h1>
             </div>
@@ -53,7 +53,7 @@ const EcosystemSignup = () => {
             className={`col-span-6 lg:pl-14 lg:block ${showOnClic ? "" : "hidden"
               }`}
           >
-            <div className="res-adjust bg-white rounded-[40px] lg:rounded-[25px] mt-20 lg:mt-0 border-[1px] border-[#014F5921] !pb-2 p-4 md:p-4 sm:p-8 xl:px-[10%] max-w-[355px] sm:max-w-[455px] md:max-w-[555px] lg:max-w-auto mx-auto">
+            <div className="res-adjust bg-white rounded-[40px] lg:rounded-[25px] mt-0 border-[1px] border-[#014F5921] !pb-2 p-4 md:p-4 sm:p-8 xl:px-[10%] max-w-[355px] sm:max-w-[455px] md:max-w-[555px] lg:max-w-auto mx-auto">
               {showVerificationForm ? (
                 <>
                   <div className="hidden lg:flex justify-center">

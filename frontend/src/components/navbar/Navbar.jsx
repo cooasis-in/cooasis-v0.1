@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="absolute h-20 w-full flex !justify-between lg:bg-[#FFFCF4] items-center px-4 lg:px-10 ">
+      <div className="h-20 w-full flex !justify-between lg:bg-[#FFFCF4] items-center px-4 lg:px-10 ">
         <div className="flex ml-2">
         <Link to="">
         <img src="images/cooasis.svg" alt="Cooasis Logo" className="h-10 w-20" />
