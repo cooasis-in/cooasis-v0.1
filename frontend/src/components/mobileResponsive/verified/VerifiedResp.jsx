@@ -26,7 +26,7 @@ const VerifiedResp = () => {
         </h3>
       </div>
       <div className="flex justify-center">
-        <div className="pt-[100px]">
+        <div className="absolute bottom-0">
           <img src="images/signup-image.png" alt="" />
         </div>
       </div>
