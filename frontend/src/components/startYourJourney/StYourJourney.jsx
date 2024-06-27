@@ -6,21 +6,21 @@ import { Link } from "react-router-dom";
 const StYourJourney = () => {
   return (
     <section className="signup-page bg-color">
-      <div className="container mx-auto px-10 max-w-[1700px] relative">
-        <div className="grid grid-cols-1  lg:grid-cols-12 items-center p-4">
+      <div className="container mx-auto px-2 md:px-6 max-w-[1700px] relative">
+        <div className="grid grid-cols-1  lg:grid-cols-12 items-start p-4">
           <div className="col-span-6">
-            <h1 className="f-PowerGrotesk text-[#014F59] text-center text-[30px] font-medium lg:text-left lg:text-6xl mb-8 lg:mb-12  leading-[29.08px] lg:mt-8 mt-10">
+            <h1 className="f-PowerGrotesk text-[#014F59] text-center text-[30px] font-medium lg:text-left lg:text-6xl mb-6 lg:mb-12  leading-[29.08px] lg:mt-8 mt-24">
             Ready to start your journey?
             </h1>
-            <div className=" mt-[80px] lg:mt-2">
-              <ul className="space-y-8">
-                <li className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#014F59] text-white flex items-center justify-center font-semibold">
+            <div className="mt-[50px] lg:mt-2">
+              <ul className="space-y-6">
+                <li className="flex justify-start items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#014F59] text-white flex items-center justify-center font-semibold mt-2">
                     1
                   </div>
                   <div>
-                    <p className="f-HelveticaNeueMedium">Create your Account</p>
-                    <p className="f-HelveticaNeueLight text-gray-600">
+                    <p className="f-HelveticaNeueMedium text-[17px] text-[#014F59] leading-[34px]">Create your Account</p>
+                    <p className="f-HelveticaNeueLight text-[13px] text-[#014F59] leading-[18px] mt-1">
                       Discover the do's and don'ts to ensure you're always on
                       the right track.
                     </p>
@@ -28,12 +28,12 @@ const StYourJourney = () => {
                 </li>
                 <hr />
                 <li className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#014F59] text-white flex items-center justify-center font-semibold">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#014F59] text-white flex items-center justify-center font-semibold mt-2">
                     2
                   </div>
                   <div>
-                    <p className="f-HelveticaNeueMedium">Fill in your details</p>
-                    <p className="f-HelveticaNeueLight text-gray-600">
+                    <p className="f-HelveticaNeueMedium text-[17px] text-[#014F59] leading-[34px]">Fill in your details</p>
+                    <p className="f-HelveticaNeueLight text-[13px] text-[#014F59] leading-[18px] mt-1">
                       Add your profile picture, description, and professional
                       information.
                     </p>
@@ -41,12 +41,12 @@ const StYourJourney = () => {
                 </li>
                 <hr />
                 <li className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#014F59] text-white flex items-center justify-center font-semibold">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#014F59] text-white flex items-center justify-center font-semibold mt-2">
                     3
                   </div>
                   <div>
-                    <p className="f-HelveticaNeueMedium">Proceed with test series</p>
-                    <p className="f-HelveticaNeueLight text-gray-600">
+                    <p className="f-HelveticaNeueMedium text-[17px] text-[#014F59] leading-[34px]">Proceed with test series</p>
+                    <p className="f-HelveticaNeueLight text-[13px] text-[#014F59] leading-[18px] mt-1">
                       Create a Gig of the service you're offering and start
                       selling instantly.
                     </p>
@@ -55,7 +55,7 @@ const StYourJourney = () => {
               </ul>
             </div>
             <Link to="/refer">
-              <button className="f-PowerGrotesk mt-[120px] mb-6 lg:mt-8 bg-[#014F59] text-[#E1FF26] py-4 px-8 rounded-full text-base font-normal w-full lg:w-[160px]">
+              <button className="f-PowerGrotesk mt-[80px] lg:mt-8 bg-[#014F59] text-[#E1FF26] py-4 px-8 rounded-full text-base font-normal w-full lg:w-[160px]">
                 Continue
               </button>
             </Link>

@@ -20,7 +20,7 @@ const EcosystemSignup = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[calc(100vh-100px)] items-center">
           <div className={`col-span-6 lg:block ${showOnClic ? "hidden" : ""}`}>
             <div className="!relative md:mt-[5%] lg:mt-[10%]">
-              <h1 className="media text-[60px] sm:text-[80px] lg:text-[60px] text-[#014F59] leading-[60px] sm:leading-[70px] lg:leading-[50px] f-PowerGrotesk  xl:max-w-[686px] text-center lg:text-left mt-16 ">
+              <h1 className="media text-[60px] sm:text-[80px] lg:text-[60px] text-[#014F59] leading-[60px] sm:leading-[70px] lg:leading-[50px] f-PowerGrotesk  xl:max-w-[686px] text-center lg:text-left mt-24 ">
                 Nex-gen design ecosystem
               </h1>
             </div>
@@ -32,10 +32,10 @@ const EcosystemSignup = () => {
               />
             </div>
             {/* Only For Mobiles Screen Content Start */}
-            <div className="block lg:hidden bg-[#014F59] py-6 rounded-full mt-20">
+            <div className="block lg:hidden bg-[#014F59] py-4 rounded-full mt-24">
               <button
                 onClick={clickOnNextBtn}
-                className="f-PowerGrotesk text-[24px] md:text-[33px] text-[#E1FF26] leading-[14.13px] font-normal w-full"
+                className="f-PowerGrotesk text-[23px] md:text-[33px] text-[#E1FF26] leading-[14.13px] font-normal w-full"
               >
                 Next
               </button>
@@ -50,11 +50,10 @@ const EcosystemSignup = () => {
             {/* Only For Mobiles Screen Content End */}
           </div>
           <div
-            className={`col-span-6 lg:pl-14 lg:block ${
-              showOnClic ? "" : "hidden"
-            }`}
+            className={`col-span-6 lg:pl-14 lg:block ${showOnClic ? "" : "hidden"
+              }`}
           >
-            <div className="res-adjust bg-white rounded-[40px] lg:rounded-[25px] mt-10 lg:mt-0 border-[1px] border-[#014F5921] p-4 sm:p-8 xl:px-[10%] max-w-[355px] sm:max-w-[455px] md:max-w-[555px] lg:max-w-auto mx-auto">
+            <div className="res-adjust bg-white rounded-[40px] lg:rounded-[25px] mt-20 lg:mt-0 border-[1px] border-[#014F5921] !pb-2 p-4 md:p-4 sm:p-8 xl:px-[10%] max-w-[355px] sm:max-w-[455px] md:max-w-[555px] lg:max-w-auto mx-auto">
               {showVerificationForm ? (
                 <>
                   <div className="hidden lg:flex justify-center">
@@ -83,25 +82,25 @@ const EcosystemSignup = () => {
                         type="text"
                         id="verification-code-1"
                         placeholder=""
-                        className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-20 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
+                        className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
                       />
                       <input
                         type="text"
                         id="verification-code-2"
                         placeholder=""
-                        className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-20 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
+                        className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
                       />
                       <input
                         type="text"
                         id="verification-code-3"
                         placeholder=""
-                        className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-20 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
+                        className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
                       />
                       <input
                         type="text"
                         id="verification-code-4"
                         placeholder=""
-                        className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-20 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
+                        className="readjustment text-[17px] text-[#014F5980] leading-[14.13px] font-extralight text-center w-16 h-16 border-[1px] border-[#014F5917] rounded-lg focus:outline-none focus:ring-2 mx-2"
                       />
                     </div>
                   </form>
@@ -116,7 +115,7 @@ const EcosystemSignup = () => {
                       Click to resend
                     </a>
                   </div>
-                  <Link  to="/verified" className="f-PowerGrotesk text-[17px] lg:text-[24px] text-[#E1FF26] leading-[14.13px] lg:leading-[19.94px] font-normal bg-[#014F59] px-6 py-4 lg:px-8 lg:py-6 w-full rounded-full flex items-center justify-center">
+                  <Link to="/verified" className="f-PowerGrotesk text-[17px] lg:text-[24px] text-[#E1FF26] leading-[14.13px] lg:leading-[19.94px] font-normal bg-[#014F59] px-6 py-4 lg:px-8 lg:py-6 w-full rounded-full flex items-center justify-center">
                     Verify Account
                   </Link>
                   <div className="flex items-center justify-center">
@@ -166,7 +165,7 @@ const EcosystemSignup = () => {
                         className="absolute right-[35px] hidden lg:block"
                       />
                     </div>
-                    <div className="mt-8 lg:mt-4 mb-4">
+                    <div className="mt-8 lg:mt-4 mb-2">
                       <button
                         onClick={clickOnGoogleSignup}
                         className="f-PowerGrotesk  text-[16px] lg:text-[24px] text-[#E1FF26] leading-[14.13px] lg:leading-[19.94px] font-normal bg-[#014F59] px-6 py-4 lg:px-8 lg:py-6 w-full rounded-full flex items-center justify-center"
@@ -182,7 +181,7 @@ const EcosystemSignup = () => {
                       </button>
                     </div>
                     <div className="hidden lg:block">
-                      <p className=".f-HelveticaNeueRoman mt-6 text-[14px] text-[#014F59] leading-[20.52px] fomt-normal text-center">
+                      <p className="f-HelveticaNeueRoman mt-6 text-[14px] text-[#014F59] leading-[20.52px] text-center">
                         By creating an account you agree with our{" "}
                         <span>
                           <u>Terms of Service, Privacy Policy,</u>{" "}
@@ -192,7 +191,7 @@ const EcosystemSignup = () => {
                           <u>Notification Settings</u>.
                         </span>
                       </p>
-                      <p className=".f-HelveticaNeueRoman mt-6 text-[14px] text-[#014F59] leading-[20.52px] fomt-normal text-center">
+                      <p className="f-HelveticaNeueRoman mt-6 text-[14px] text-[#014F59] leading-[20.52px] text-center">
                         Already have an account?{" "}
                         <span className="text-[#7D22FF]">
                           <u>Sign In</u>
@@ -203,11 +202,31 @@ const EcosystemSignup = () => {
                 </>
               )}
             </div>
-            <div className="mt-7 flex justify-center block lg:hidden">
+            {!showVerificationForm && (
+               <div className="block lg:hidden ">
+               <p className="f-HelveticaNeueRoman mt-6 text-[12px] md:text-[14px] text-[#014F59] leading-[20.52px] text-center">
+                 By creating an account you agree with our
+                 <span>
+                   <u>Terms of Service, Privacy Policy,</u>
+                 </span>
+                 and our default &nbsp; 
+                  <span>
+                   <u>Notification Settings</u>.
+                 </span>
+               </p>
+               <p className="f-HelveticaNeueRoman mt-3 text-[12px] md:text-[14px] text-[#014F59] leading-[20.52px] text-center">
+                 Already have an account?
+                 <span className="text-[#7D22FF]">
+                   <u>Sign In</u>
+                 </span>
+               </p>
+             </div>
+            )}
+           
+          <div className="mt-7 flex justify-center block lg:hidden">
             <img src="images/signup-image.png" alt="" />
           </div>
           </div>
-         
         </div>
       </div>
     </section>

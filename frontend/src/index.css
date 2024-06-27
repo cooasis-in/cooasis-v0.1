@@ -33,6 +33,7 @@
   .bg-color {
     background-color: #fefdee;
     background-image: linear-gradient(160deg, #fefdee 60%, #f5fdaa, #fefdee);
+    min-height: 100vh;
   }
 
 }
