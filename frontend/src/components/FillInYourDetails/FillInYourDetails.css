@@ -6,3 +6,14 @@
 .icon-adj {
   position: relative !important;
 }
+
+.input-form {
+  font-family: HelveticaNeueLight;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url('/public/font/HelveticaNeueLight.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

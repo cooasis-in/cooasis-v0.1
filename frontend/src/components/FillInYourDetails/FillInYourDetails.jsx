@@ -1,7 +1,48 @@
 import React from 'react';
 import './FillInYourDetails.css';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+
+const parseDateString = (value, originalValue) => {
+  const parsedDate = originalValue.split('/').reverse().join('-');
+  return new Date(parsedDate);
+};
 
 const FillInYourDetails = () => {
+  const initialValues = {
+    name: '',
+    username: '',
+    mobile: '',
+    dateOfBirth: '',
+  };
+
+  const validationSchema = Yup.object({
+    name: Yup.string().required('Required'),
+    username: Yup.string().required('Required'),
+    mobile: Yup.string().matches(/^[0-9]+$/, "Must be only digits").min(10, 'Must be exactly 10 digits').max(10, 'Must be exactly 10 digits').required('Required'),
+    dateOfBirth: Yup.date()
+      .transform(parseDateString)
+      .typeError('Invalid date format. Use dd/mm/yyyy')
+      .required('Required'),
+  });
+
+  const onSubmit = async (values, { setSubmitting }) => {
+    try {
+      const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+      const data = await response.json();
+      console.log('Success:', data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+    setSubmitting(false);
+  };
+
   return (
     <section className="lg-bg-color fillinyourdetails min-h-[100vh]">
       <div className="container mx-auto relative">
@@ -60,7 +101,57 @@ const FillInYourDetails = () => {
               </div>
             </div>
             <div className="col-span-7">
-              <form>
+
+              <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
+                {({ isSubmitting }) => (
+                  <Form>
+                    <div className="grid grid-cols-2 max-w-[700px] gap-7">
+                      <div>
+                        <label htmlFor="name" className="input-form ml-2 block text-[15px] xxl:text-[17px] text-[#014F59] leading-[20.59px]">Name</label>
+                        <Field type="text" id="name" name="name" className="input-form font-extralight mt-2 text-[15px] xxl:text-[17px] text-[#000000] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full py-5 xxl:py-6 px-8 block w-full p-2.5" placeholder="Eg. Jeff Bezos" />
+                        <ErrorMessage name="name" component="div" />
+                      </div>
+
+                      <div className="icon-adj">
+                        <label htmlFor="username" className="input-form ml-2 block text-[15px] xxl:text-[17px] text-[#014F59] leading-[20.59px]">Username</label>
+                        <Field type="text" id="username" name="username" className="input-form mt-2 text-[15px] xxl:text-[17px] text-[#000000] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full py-5 xxl:py-6 px-8 block w-full p-2.5" placeholder="@thecreativeguy" />
+                        <ErrorMessage name="username" component="div" />
+                        <img src="images/username.svg" alt="" className="absolute right-6 top-[47px]" />
+                        <p class="f-HelveticaNeueLight flex items-start ml-3 pt-4 text-[15px] xxl:text-[17px] text-[#014F5980] leading-[14.13px]"><span className="mr-2"><img src="images/icon.svg" alt="" className="max-w-[14px] max-h-[13px]" /></span> Did not liked the username ? Shuffle and get another one !</p>
+                      </div>
+                      </div>
+
+                     <div className="grid grid-cols-2 max-w-[700px] gap-7 mt-4">
+                     <div className="icon-adj">
+                        <label htmlFor="mobile" className="input-form ml-2 block text-[15px] xxl:text-[17px] text-[#014F59] leading-[20.59px]">Mobile</label>
+                        <Field type="text" id="mobile" name="mobile" className="input-form font-extralight mt-2 text-[15px] xxl:text-[17px] text-[#000000] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full py-5 xxl:py-6 px-8 block w-full p-2.5" placeholder="+91" />
+                        <ErrorMessage name="mobile" component="div" />
+                        <button className="f-HelveticaNeueRoman py-2 px-4 text-[17px] text-[#014F5980] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full absolute right-5 bottom-3">verify</button>
+                      </div>
+
+                      <div className="icon-adj">
+                        <label htmlFor="dateOfBirth" className="input-form ml-2 block text-[15px] xxl:text-[17px] text-[#014F59] leading-[20.59px]">Date of Birth</label>
+                        <Field type="text" id="dateOfBirth" name="dateOfBirth" className="input-form font-extralight mt-2 text-[15px] xxl:text-[17px] text-[#000000] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full py-5 xxl:py-6 px-8 block w-full p-2.5" placeholder="dd/mm/yyyy" />
+                        <ErrorMessage name="dateOfBirth" component="div" />
+                        <img src="images/DateOfBirth.svg" alt="" className="absolute right-6 top-[47px]" />
+                      </div>
+                     </div>
+                    
+
+                    <button type="submit" disabled={isSubmitting} className="f-PowerGrotesk text-[18px] xxl:text-[24px] text-[#E1FF26] leading-[19.94px] bg-[#014F59] max-w-[287px] max-h-[83px] rounded-full py-5 xxl:py-6 px-10 mt-10 xxl:mt-14">Save and proceed</button>
+                  </Form>
+                )}
+              </Formik>
+
+
+
+
+
+
+
+
+
+              <form className='hidden'>
                 <div className="grid grid-cols-2 max-w-[700px] gap-7">
                   <div>
                     <label for="name" class="f-HelveticaNeueLight ml-2 block text-[15px] xxl:text-[17px] text-[#014F59] leading-[20.59px]">Name</label>
