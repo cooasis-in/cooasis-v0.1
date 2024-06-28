@@ -1,8 +1,4 @@
 .signup-page {
-  background-image: url(images/background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   min-height: calc(100vh - 80px) !important;
 }

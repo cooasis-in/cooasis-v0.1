@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const StYourJourney = () => {
   return (
-    <section className="signup-page bg-color">
+    <section className="signup-page">
       <div className="container mx-auto px-2 md:px-6 max-w-[1700px] relative">
         <div className="grid grid-cols-1  lg:grid-cols-12 items-start p-4 py-0">
           <div className="col-span-6">
-            <h1 className="f-PowerGrotesk text-[#014F59] text-center text-[30px] font-medium lg:text-left lg:text-6xl mb-6 lg:mb-12  leading-[29.08px]">
+            <h1 className="f-PowerGrotesk text-[#014F59] text-center text-[30px] font-medium lg:text-left lg:text-6xl mt-[16px] lg:mt-0 mb-6 lg:mb-12  leading-[29.08px]">
             Ready to start your journey?
             </h1>
             <div className="mt-[50px] lg:mt-2">

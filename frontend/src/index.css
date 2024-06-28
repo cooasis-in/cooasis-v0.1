@@ -28,7 +28,7 @@
   font-family: HelveticaNeueMedium;
 }
 
-.lg-bg-color {
+body {
   background-color: #fefdee;
   background-image: linear-gradient(160deg, #fefdee 60%, #f5fdaa, #fefdee);
   min-height: 100vh;
@@ -36,7 +36,7 @@
 
 @media (max-width: 1024px) {
 
-  .bg-color {
+   body {
     background-color: #fefdee;
     background-image: linear-gradient(160deg, #fefdee 60%, #f5fdaa, #fefdee);
     min-height: 100vh;

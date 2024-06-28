@@ -26,9 +26,9 @@ const UserRegister = () => {
   };
 
   return (
-    <section className="bg-color signup-page px-6 xl:px-[36px]">
+    <section className="signup-page px-6 xl:px-[36px]">
       <div className="mx-auto md:px-10 max-w-[1700px]">
-        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[calc(100vh-100px)] items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[calc(100vh-80px)] items-center">
           <div className={`col-span-6 lg:block ${showOnClick ? "hidden" : ""}`}>
             <div className="!relative">
               <h1 className="media text-[60px] sm:text-[80px] lg:text-[60px] text-[#014F59] leading-[60px] sm:leading-[70px] lg:leading-[50px] f-PowerGrotesk  xl:max-w-[686px] text-center lg:text-left">
@@ -54,11 +54,11 @@ const UserRegister = () => {
             {/* Only For Mobiles Screen Content End */}
           </div>
           <div
-            className={`col-span-6 lg:pl-14 lg:block ${
-              showOnClick ? "" : "hidden"
+            className={`col-span-6 lg:pl-14 lg:block flex-col h-full ${
+              showOnClick ? "flex" : "hidden"
             }`}
           >
-            <div className="res-adjust bg-white rounded-[40px] lg:rounded-[25px] mt-0 border-[1px] border-[#014F5921] !pb-2 p-4 md:p-4 sm:p-8 xl:px-[10%] max-w-[355px] sm:max-w-[455px] md:max-w-[555px] lg:max-w-auto mx-auto">
+            <div className="res-adjust bg-white rounded-[40px] lg:rounded-[25px] mt-[16px] lg:mt-0 border-[1px] border-[#014F5921] !pb-2 p-4 md:p-4 sm:p-8 xl:px-[10%] max-w-[355px] sm:max-w-[455px] md:max-w-[555px] lg:max-w-auto mx-auto w-full">
               {showVerificationForm ? (
                 <VerifyEmail />
               ) : showSignIn ? (
@@ -74,7 +74,7 @@ const UserRegister = () => {
                         type="username"
                         id="username"
                         placeholder="User Name"
-                        className="f-HelveticaNeueUltraLight text-[12px] lg:text-[17px] text-[#014F5980] leading-[9.97px] font-extralight w-full px-6 py-4 lg:px-8 lg:py-6 border-[1px] border-[#014F5917] rounded-full focus:outline-none focus:ring-2"
+                        className="f-HelveticaNeueUltraLight hidden lg:block text-[12px] lg:text-[17px] text-[#014F5980] leading-[9.97px] font-extralight w-full px-6 py-4 lg:px-8 lg:py-6 border-[1px] border-[#014F5917] rounded-full focus:outline-none focus:ring-2"
                       />
                       <input
                         type="email"
@@ -85,7 +85,7 @@ const UserRegister = () => {
                       <img
                         src="/images/email-2.svg"
                         alt=""
-                        className="absolute right-[25px]"
+                        className="absolute right-[25px] top-[16px] lg:top-0"
                       />
                     </div>
                     <div className="mb-4 lg:mb-6 flex items-center relative">
@@ -109,7 +109,7 @@ const UserRegister = () => {
                         Register
                       </button>
 
-                      <button className="f-PowerGrotesk text-[16px] lg:text-[24px] text-[#E1FF26] leading-[14.13px] lg:leading-[19.94px] font-normal bg-[#014F59] px-6 py-4 lg:px-8 lg:py-6 rounded-full flex mt-2 items-center justify-center">
+                      <button className="f-PowerGrotesk hidden lg:block text-[16px] lg:text-[24px] text-[#E1FF26] leading-[14.13px] lg:leading-[19.94px] font-normal bg-[#014F59] px-6 py-4 lg:px-8 lg:py-6 rounded-full flex mt-2 items-center justify-center">
                         <span className="mr-2">
                           <img
                             src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
@@ -162,8 +162,8 @@ const UserRegister = () => {
                 </p>
               </div>
             )}
-            <div className="mt-7 flex justify-center block lg:hidden">
-              <img src="images/signup-image.png" alt="" />
+            <div className="mt-[auto] pt-4 justify-center block lg:hidden">
+              <img src="images/signup-image.png" alt="" className="" />
             </div>
           </div>
         </div>
