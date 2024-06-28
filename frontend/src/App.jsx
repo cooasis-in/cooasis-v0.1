@@ -18,12 +18,6 @@ function App() {
         <Route path="/refer" element={<ReferEarn />} />
         <Route path="/slider" element={<SliderMob />} />
       </Routes>
-
-      {/* <PenTool/>
-      {/* <PenToolUi/> */}
-      {/* <FillInYourDetails /> */}
-      {/* <PenToolUi /> */}
-      {/* <UserSignIn/> */}
     </div>
   );
 }
