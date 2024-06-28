@@ -6,13 +6,13 @@ import VerifiedResp from "./components/mobileResponsive/verified/VerifiedResp";
 import SliderMob from "./components/mobileResponsive/sliderResp/SliderMob";
 import PenTool from "./components/penTool/PenTool";
 import PenToolUi from "./components/penTool/PenToolUi";
-import UserSign from "./pages/auth/UserSign";
+import UserRegister from "./pages/auth/UserRegister";
 
 function App() {
   return (
     <div className="">
       <Routes>
-        <Route path="/" element={<UserSign />} />
+        <Route path="/" element={<UserRegister />} />
         <Route path="/verify" element={<ReferEarn />} />
         <Route path="/verified" element={<VerifiedResp />} />
         <Route path="/refer" element={<ReferEarn />} />
@@ -23,6 +23,7 @@ function App() {
       {/* <PenToolUi/> */}
       {/* <FillInYourDetails /> */}
       {/* <PenToolUi /> */}
+      {/* <UserSignIn/> */}
     </div>
   );
 }
