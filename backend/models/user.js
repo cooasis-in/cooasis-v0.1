@@ -7,6 +7,12 @@ const UserSchema = new Schema({
         type: String,
         required: true,
         unique: true
+    },
+    otp: String,
+    otpExpires: Date,
+    isVerified: {
+        type: Boolean,
+        default: false
     }
 })
 
