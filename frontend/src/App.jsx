@@ -22,7 +22,7 @@ function App() {
         <Route path="/fill-your-details" element={<FillInYourDetails />} />
       </Routes>
       {/* <PenTool/> */}
-      <PenToolUi/>
+      {/* <PenToolUi/> */}
     </div>
   );
 }

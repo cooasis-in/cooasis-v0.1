@@ -67,22 +67,25 @@ const FillInYourDetails = () => {
                     <input type="name" id="name" aria-describedby="helper-text-explanation" class="f-HelveticaNeueUltraLight mt-2 text-[15px] xxl:text-[17px] text-[#014F5980] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full py-5 xxl:py-6 px-8 block w-full p-2.5" placeholder="Eg.  Jeff Bezoz" />
                   </div>
 
-                  <div>
+                  <div className="icon-adj">
                     <label for="username" class="f-HelveticaNeueLight ml-2 block text-[15px] xxl:text-[17px] text-[#014F59] leading-[20.59px]">Username</label>
                     <input type="username" id="username" aria-describedby="helper-text-explanation" class="f-HelveticaNeueLight mt-2 text-[15px] xxl:text-[17px] text-[#014F59] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full py-5 xxl:py-6 px-8 block w-full p-2.5" placeholder="@thecreativeguy" />
+                    <img src="images/username.svg" alt="" className="absolute right-6 top-[47px]" />
                     <p class="f-HelveticaNeueLight flex items-start ml-3 pt-4 text-[15px] xxl:text-[17px] text-[#014F5980] leading-[14.13px]"><span className="mr-2"><img src="images/icon.svg" alt="" className="max-w-[14px] max-h-[13px]" /></span> Did not liked the username ? Shuffle and get another one !</p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 max-w-[700px] gap-7 mt-2">
-                  <div>
+                  <div className="icon-adj">
                     <label for="name" class="f-HelveticaNeueLight ml-2 block text-[15px] xxl:text-[17px] text-[#014F59] leading-[20.59px]">Mobile</label>
                     <input type="name" id="name" aria-describedby="helper-text-explanation" class="f-HelveticaNeueUltraLight mt-2 text-[15px] xxl:text-[17px] text-[#014F5980] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full py-5 xxl:py-6 px-8 block w-full p-2.5" placeholder="+91" />
+                    <button className="f-HelveticaNeueRoman py-2 px-4 text-[17px] text-[#014F5980] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full absolute right-5 bottom-4">verify</button>
                   </div>
 
-                  <div>
+                  <div className="icon-adj">
                     <label for="username" class="f-HelveticaNeueLight ml-2 block text-[15px] xxl:text-[17px] text-[#014F59] leading-[20.59px]">Date of Birth</label>
                     <input type="username" id="username" aria-describedby="helper-text-explanation" class="f-HelveticaNeueUltraLight mt-2 text-[15px] xxl:text-[17px] text-[#014F5980] leading-[14.13px] border-[1px] border-[#014F5917] rounded-full py-5 xxl:py-6 px-8 block w-full p-2.5" placeholder="dd/mm/yyyy" />
+                    <img src="images/DateOfBirth.svg" alt="" className="absolute right-6 top-[47px]" />
                   </div>
                 </div>
                 <button className="f-PowerGrotesk text-[18px] xxl:text-[24px] text-[#E1FF26] leading-[19.94px] bg-[#014F59] max-w-[287px] max-h-[83px] rounded-full py-5 xxl:py-6 px-10 mt-10 xxl:mt-14">Save and proceed</button>

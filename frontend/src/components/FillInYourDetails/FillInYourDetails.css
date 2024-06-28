@@ -1,0 +1,8 @@
+.fillinyourdetails {
+  width: 100%;
+  min-height: calc(100vh - 80px) !important;
+}
+
+.icon-adj {
+  position: relative !important;
+}
