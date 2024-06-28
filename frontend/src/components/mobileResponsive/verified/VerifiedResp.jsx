@@ -7,7 +7,7 @@ const VerifiedResp = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowNewComponent(true);
-    }, 60000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
