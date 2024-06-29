@@ -17,11 +17,12 @@ const VerifiedResp = () => {
   }
 
   return (
-    <div className="text-center sm:block lg:hidden">
-      <div className="mt-[250px]">
+    <section className="bg-color">
+       <div className="text-center block lg:hidden">
+      <div className="pt-[200px]">
         <img src="images/verify.svg" alt="" className="mx-auto" />
-        <h3 className="text-[25px] text-[#014F59] leading-[22.77px] font-bold mt-4">
-          Email verified
+        <h3 className="f-PowerGrotesk text-[25px] text-[#014F59] leading-[22.77px] font-bold mt-2">
+        email verified
         </h3>
       </div>
       <div className="flex justify-center">
@@ -30,6 +31,7 @@ const VerifiedResp = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

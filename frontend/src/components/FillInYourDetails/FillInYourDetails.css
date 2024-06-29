@@ -1,8 +1,19 @@
 .fillinyourdetails {
-  background-image: url(../../assets/FillInYourDetailsBG.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    min-height: calc(100vh - 80px) !important;
   width: 100%;
-  min-height: 100vh;
+  }
+
+.icon-adj {
+  position: relative !important;
+}
+
+.input-form {
+  font-family: HelveticaNeueLight;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url('/public/font/HelveticaNeueLight.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
