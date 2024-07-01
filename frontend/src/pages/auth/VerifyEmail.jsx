@@ -7,15 +7,15 @@ const VerifyEmail = () => {
       <div className="hidden lg:flex justify-center">
         <img src="images/email.png" alt="Email Icon" className="h-16 w-16" />
       </div>
-      <h2 className="f-PowerGrotesk text-[40px] font-bold leading-[41.55px] text-[#014F59] mb-8 text-center hidden lg:block">
+      <h2 className="f-PowerGrotesk text-[40px] font-bold leading-[41.55px] text-[#014F59] mb-8 text-center hidden lg:block dark:text-gray-100">
         Verify your email
       </h2>
-      <h2 className="f-PowerGrotesk text-[35px] font-bold text-[#014F59] mt-2 text-center block lg:hidden">
+      <h2 className="f-PowerGrotesk text-[35px] font-bold text-[#014F59] mt-2 text-center block lg:hidden dark:text-gray-100">
         Verify
       </h2>
       <form>
         <div className="mb-4 flex flex-col items-center justify-center relative">
-          <p className="f-HelveticaNeueLight text-[12px] sm:text-[15px] leading-[17.59px] lg:leading-[14.13px] w-full text-center pt-4 pb-2 lg:py-6 text-[#5A5A5A] font-medium">
+          <p className="f-HelveticaNeueLight text-[12px] sm:text-[15px] leading-[17.59px] lg:leading-[14.13px] w-full text-center pt-4 pb-2 lg:py-6 text-[#5A5A5A] font-medium dark:text-[#415B5E]">
             Enter the 4-digit verification code sent to j*****@***.com
           </p>
           <p className="f-HelveticaNeueRoman text-[#C8C8C8]">Change email</p>

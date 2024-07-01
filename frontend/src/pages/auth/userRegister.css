@@ -1,40 +1,66 @@
 .signup-page {
-  background-image: url(images/background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   min-height: calc(100vh - 80px) !important;
 }
+
+
 
 .sing-up-img {
   max-width: 90%;
   width: 100%;
 }
 
+/* Input Dark mode Styles */
+.dark .custom-gradient {
+  background: linear-gradient(91.39deg, #24292a 2.96%, #1a1e1f 100%);
+  color: #6a929880;
+  text-transform: capitalize;
+}
 
-@media (max-width: 400px) {
+.dark .btn-color {
+  color: #E1FF26;
+}
 
-  .res-adjust {
-    margin-top: 20px !important;
-  }
+.dark .custom-inset {
+  box-shadow: 3px 1px 4px 0px #00000040 inset;
+}
+
+.dark .box-border {
+  border: 1px solid #ffffff21;
 
 }
 
-@media (max-width: 469px) {
+hr.custom-hr {
+  border: 0;
+  border-top: 1px solid #415b5e80;
+  margin-top: px;
+}
 
+.dark .next-gen {
+  background: linear-gradient(90deg, #00fb87 0%, #b7ff40 56.85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Media query */
+
+@media (max-width: 400px) {
+  .res-adjust {
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 469px) {
   .media {
     font-size: 45px !important;
     line-height: 50px !important;
   }
-
 }
 
 @media (max-width: 364px) {
-
   .media {
     font-size: 38px !important;
     line-height: 45px !important;
   }
-
 }
