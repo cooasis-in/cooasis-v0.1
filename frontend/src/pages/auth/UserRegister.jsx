@@ -162,8 +162,11 @@ const UserRegister = () => {
                 </p>
               </div>
             )}
-            <div className="mt-[auto] pt-4 justify-center block lg:hidden">
+            <div className="mt-[auto] pt-4 block lg:hidden">
               <img src="images/signup-image.png" alt="" className="" />
+            </div>
+            <div className="relative">
+              <img src="images/headphone.svg" alt="" className="absolute bottom-[27px] right-2" />
             </div>
           </div>
         </div>

@@ -49,9 +49,9 @@ function SliderMob() {
   return (
     <>
       {isSmallScreen && (
-        <div className="container max-auto mt-10">
-          <div className="mb-14 lg:mb-20">
-            <h1 className="media text-[60px] sm:text-[80px] lg:text-[60px] text-[#014F59] leading-[60px] sm:leading-[70px] lg:leading-[50px] sing-up-title xl:max-w-[686px] text-center lg:text-left mt-16 ">
+        <div className="container max-auto">
+          <div className="mb-8 lg:mb-20">
+            <h1 className="media text-[60px] sm:text-[80px] lg:text-[60px] text-[#014F59] leading-[60px] sm:leading-[70px] lg:leading-[50px] sing-up-title xl:max-w-[686px] text-center lg:text-left">
               Nex-gen design ecosystem
             </h1>
           </div>
@@ -66,7 +66,7 @@ function SliderMob() {
           </div>
         </div>
       )}
-      <div className="bg-[#014F59] lg:hidden block  py-6 m-8 rounded-full mt-16">
+      <div className="bg-[#014F59] lg:hidden block  py-6 mx-8 mt-8 rounded-full">
         <Link to="/">
           <button className="text-[24px] text-[#E1FF26] leading-[14.13px] font-normal w-full">
             Start your Journey

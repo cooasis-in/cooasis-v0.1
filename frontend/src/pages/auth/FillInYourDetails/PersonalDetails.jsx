@@ -63,7 +63,7 @@ const FillInYourDetails = () => {
               <div className="bg-[#FFFFFFC2] border-[1px] border-[#014F5921] rounded-[40px] px-6 py-4 xxl:p-6">
                 <div>
                   <img src="images/ManAvatar.svg" alt="" className="rounded-full mx-auto max-w-[40%] xxl:max-w-[100%]" />
-                  <p className="f-HelveticaNeueLight text-[14px] xxl:text-[16px] text-[#014F59] leading-[19.38px] text-center bg-[#F2F2F2] max-w-[136px] mt-2 mx-auto py-2 px-4 rounded-full">Change Avatar</p>
+                  <p className="f-HelveticaNeueLight text-[14px] xxl:text-[16px] text-[#014F59] leading-[19.38px] text-center bg-[#FFFFFF80] max-w-[136px] mt-2 mx-auto py-2 px-4 rounded-full">Change Avatar</p>
                 </div>
                 <div className="mt-6 xxl:mt-10">
                   <ul>

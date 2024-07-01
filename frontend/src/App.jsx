@@ -6,12 +6,13 @@ import VerifiedResp from "./components/mobileResponsive/verified/VerifiedResp";
 import SliderMob from "./components/mobileResponsive/sliderResp/SliderMob";
 import PenToolUi from "./components/penTool/PenToolUi";
 import UserRegister from "./pages/auth/UserRegister";
-import FillInYourDetails from "./components/FillInYourDetails/FillInYourDetails";
+import PersonalDetails from "./pages/auth/FillInYourDetails/PersonalDetails";
+import ProfessionalDetails from "./pages/auth/FillInYourDetails/ProfessionalDetails";
 
 function App() {
   return (
     <div className="">
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<UserRegister />} />
         <Route path="/verify" element={<ReferEarn />} />
         <Route path="/verified" element={<VerifiedResp />} />
@@ -19,7 +20,9 @@ function App() {
         <Route path="/slider" element={<SliderMob />} />
         <Route path="/fill-details" element={<FillInYourDetails />} />
       </Routes>
-      {/* <SliderMob/> */}
+      <SliderMob/> */}
+      {/* <PersonalDetails/> */}
+      <ProfessionalDetails/>
     </div>
   );
 }
